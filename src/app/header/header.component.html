@@ -1,0 +1,7 @@
+<header class="header">
+  <div class="header__today-info"><h1>{{dateNow | date:'fullDate'}}</h1></div>
+  <div class="header__input-city">
+    <input type="text" [(ngModel)] = "dataCity" />
+    <button (click) = 'setCity()' >Check weather</button>
+  </div>
+</header>

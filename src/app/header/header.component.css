@@ -1,0 +1,53 @@
+.header{
+    background: rgb(75, 5, 92);
+   padding: 20px;
+   text-align: center;
+   font-size: 2rem;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between   ;
+   
+}
+.header h1{
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.header button{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 2rem;
+    height: 50px;
+    background-color: rgb(75, 5, 92);
+   border-radius: 50%;
+   border-width: 2px;
+   border-color: rgb(75, 5, 92);
+   border-style: solid;
+   font-weight: bolder;
+}
+.header button:hover{
+    animation: hovered 3s infinite alternate;
+}
+@keyframes hovered {
+    50% {
+      background: rgb(150, 46, 219);
+      box-shadow: 0 -200px 100px -100px rgb(105, 26, 105) inset;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .header{
+        font-size: 1rem;
+    }
+    .header h1{
+        margin-top: 15px;
+    }
+    .header button{
+        font-size: 1rem;
+    }
+}
+  @media screen and (max-width: 430px){
+    .header h1{
+        margin-top: 0px;
+    }
+    
+}

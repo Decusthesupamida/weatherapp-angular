@@ -1,0 +1,111 @@
+.main{
+   
+    margin-top: 6rem;
+    margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+  max-width: 760px;
+  height: 500px; 
+  
+}
+.main__input{
+    
+    border-collapse: collapse; 
+    border-radius: 7px;
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 2px 4px 94px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 2px 4px 94px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 2px 4px 94px 2px rgba(34, 60, 80, 0.2);
+
+}
+.first-stage-night{
+    padding: 10px;
+    -webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=800x600');
+    background-position: center; /* Положение фона */
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+   
+    
+}
+.first-stage-morning{
+    padding: 10px;
+    -webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png?compress=1&resize=800x600');
+    background-position: center; /* Положение фона */
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+   
+    
+}
+.second-stage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+.second-stage-item{text-align: center;}
+.main__weather-info{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.main__weather-info p{
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.main_weather-info-condition{
+    display: flex;
+}
+.main_weather-info-condition img{
+    margin-top: -20px;
+}
+.main__city{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.second-stage{
+    padding: 10px;
+    -webkit-border-bottom-right-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+    height: 50%;
+    width: 100%;
+    background: rgb(205, 241, 241);
+}

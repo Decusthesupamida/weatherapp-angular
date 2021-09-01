@@ -1,0 +1,13 @@
+<main class="main-news">
+  <div class="main__header"><h1>{{title}}</h1></div>
+  <article class="main__news">
+    
+    <div class="main_news-item" *ngFor="let item of randArr">
+      <div *ngIf="((response | typeof) === 'object' && response['articles'][item]['title'].length > 20 )"><img [src]="response['articles'][item]['urlToImage']" alt="">
+        <p>
+          <a href="{{response['articles'][item]['url']}}" target="_blank">{{response['articles'][item]['title']}}</a>
+        </p></div>
+      
+    </div>
+  </article>
+</main>

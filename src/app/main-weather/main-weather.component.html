@@ -1,0 +1,20 @@
+    <main *ngIf="visible == true" class="main">
+      <article class="main__input">
+        <div [ngClass]="{'first-stage-night': checkTime == true, 'first-stage-morning': checkTime == false }">
+          <div class="main__weather-info">
+            {{response['current']['temp_c']}}°
+            <div class="main_weather-info-condition"><p>{{response['current']['condition']['text']}}</p> <img src="{{response['current']['condition']['icon']}}" alt=""></div> 
+            <p>{{response['current']['humidity']}}% | {{response['current']['wind_kph']}} km/h</p>
+          </div>
+          <div class="main__city">{{response['location']['name']}}</div>
+        </div>
+        <div class="second-stage">
+          <div class="second-stage-item" *ngFor="let item of response['forecast']['forecastday']">
+            <p><img src="{{item['day']['condition']['icon']}}" alt=""></p>
+            <p>{{item['day']['avgtemp_c']}} °</p>
+            <p>{{item['day']['condition']['text']}}</p>
+          </div>
+        </div>
+      </article>
+      
+    </main>
